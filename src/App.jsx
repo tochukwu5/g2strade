@@ -22,7 +22,7 @@ const benefits = [
   {
     icon: '🎓',
     title: 'Premium Education Library',
-    desc: 'Full ICT strategy breakdowns, entry model guides, my complete trading checklist, chart drills, and detailed trade reviews — built for clarity and repetition.',
+    desc: 'Full ICT strategy breakdowns, entry model guides, my complete trading checklist, chart drills, and detailed trade reviews built for clarity and repetition.',
   },
   {
     icon: '🧠',
@@ -32,7 +32,7 @@ const benefits = [
   {
     icon: '🤝',
     title: 'Direct Access to Gabe',
-    desc: 'Get personalized feedback, chart markups, journaling guidance, and coaching directly from Gabe — not a support team.',
+    desc: 'Get personalized feedback, chart markups, journaling guidance, and coaching directly from Gabe not a support team.',
   },
   {
     icon: '🏆',
@@ -48,7 +48,7 @@ const benefits = [
 
 const steps = [
   { num: '01', title: 'Learn the Market', desc: 'Understand how financial markets move using a systematic, ICT-based approach to price action and narrative.' },
-  { num: '02', title: 'Practice on Sim', desc: 'Apply your knowledge on simulated accounts — gathering data, tracking results, and refining your edge.' },
+  { num: '02', title: 'Practice on Sim', desc: 'Apply your knowledge on simulated accounts gathering data, tracking results, and refining your edge.' },
   { num: '03', title: 'Pass the Evaluation', desc: 'Transfer your skills to live prop firm evaluations with Gabe\'s exact framework, rules, and risk model.' },
   { num: '04', title: 'Get Funded & Get Paid', desc: 'Acquire 7-figure funded accounts, hit consistent monthly payouts, and build toward fund management.' },
 ]
