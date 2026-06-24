@@ -236,14 +236,14 @@ function Hero({ onJoin }) {
       {/* Hero image (Gabe's photo) */}
       <div className="relative z-10 mt-16 max-w-3xl mx-auto px-4">
         <div className="relative rounded-2xl overflow-hidden border border-[#1E1E1E]">
-          <img src="/images/photo/gabe.jpg" alt="Gabe — G2S Trades founder and lead mentor" className="w-full object-cover max-h-[500px] object-top" />
+          <img src="/images/photo/gabe.jpeg" alt="Gabe — G2S Trades founder and lead mentor" className="w-full object-cover max-h-[500px] object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
           <div className="absolute bottom-6 left-6 right-6">
             <div className="flex items-center gap-3">
               <img src="/images/logo/logo.png" alt="G2S Trades" className="h-10 w-auto" />
               <div>
                 <p className="font-bold text-white">Gabe — Lead Mentor</p>
-                <p className="text-xs text-[#C9A227]">5yr Funded Futures Trader | MFF & TPT</p>
+                <p className="text-xs text-[#C9A227]">6yr Funded Futures Trader | MFF & TPT</p>
               </div>
             </div>
           </div>
