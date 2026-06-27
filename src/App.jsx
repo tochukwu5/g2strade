@@ -22,7 +22,7 @@ const benefits = [
   {
     icon: '🎓',
     title: 'Premium Education Library',
-    desc: 'Full ICT strategy breakdowns, entry model guides, my complete trading checklist, chart drills, and detailed trade reviews built for clarity and repetition.',
+    desc: 'Full ICT strategy breakdowns, entry model guides, my complete trading checklist, chart drills, and detailed trade reviews — built for clarity and repetition.',
   },
   {
     icon: '🧠',
@@ -32,7 +32,7 @@ const benefits = [
   {
     icon: '🤝',
     title: 'Direct Access to Gabe',
-    desc: 'Get personalized feedback, chart markups, journaling guidance, and coaching directly from Gabe not a support team.',
+    desc: 'Get personalized feedback, chart markups, journaling guidance, and coaching directly from Gabe — not a support team.',
   },
   {
     icon: '🏆',
@@ -48,7 +48,7 @@ const benefits = [
 
 const steps = [
   { num: '01', title: 'Learn the Market', desc: 'Understand how financial markets move using a systematic, ICT-based approach to price action and narrative.' },
-  { num: '02', title: 'Practice on Sim', desc: 'Apply your knowledge on simulated accounts gathering data, tracking results, and refining your edge.' },
+  { num: '02', title: 'Practice on Sim', desc: 'Apply your knowledge on simulated accounts — gathering data, tracking results, and refining your edge.' },
   { num: '03', title: 'Pass the Evaluation', desc: 'Transfer your skills to live prop firm evaluations with Gabe\'s exact framework, rules, and risk model.' },
   { num: '04', title: 'Get Funded & Get Paid', desc: 'Acquire 7-figure funded accounts, start collecting payouts, and build toward trading independently without relying on signals.' },
 ]
@@ -220,10 +220,15 @@ function Hero({ onJoin }) {
         </div>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
           <button onClick={onJoin} className="gold-gradient text-black text-base font-black px-10 py-4 rounded-full hover:opacity-90 transition-all hover:scale-105 gold-glow">
             Start 3-Day Free Trial →
           </button>
+          <a href="https://discord.gg/n8Z5qQPumc" target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-[#5865F2] hover:bg-[#4752C4] text-white text-base font-bold px-8 py-4 rounded-full transition-all hover:scale-105">
+            <DiscordIcon />
+            Free Discord
+          </a>
           <a href="https://linktr.ee/G2strades" target="_blank" rel="noopener noreferrer"
             className="border border-[#1E1E1E] bg-white/5 text-white text-base font-semibold px-8 py-4 rounded-full hover:border-[#C9A227]/50 hover:bg-white/10 transition-all">
             View All Links ↗
@@ -231,10 +236,13 @@ function Hero({ onJoin }) {
         </div>
 
         <p className="mt-4 text-xs text-gray-600">No commitment required. Cancel anytime before the trial ends.</p>
+        <div className="mt-3 inline-flex items-center gap-2 border border-[#C9A227]/30 bg-[#C9A227]/5 rounded-full px-4 py-1.5">
+          <span className="text-xs font-bold text-[#C9A227]">🎉 Use code <span className="bg-[#C9A227]/20 px-1.5 py-0.5 rounded font-black">WELCOME30</span> for 30% off your first billing cycle</span>
+        </div>
       </div>
 
       {/* Hero image (Gabe's photo) */}
-      <div className="relative z-10 mt-16 max-w-3xl mx-auto px-4">
+        <div className="relative z-10 mt-16 max-w-3xl mx-auto px-4">
         <div className="relative rounded-2xl overflow-hidden border border-[#1E1E1E]">
           <img src="/images/photo/gabe.jpeg" alt="Gabe — G2S Trades founder and lead mentor" className="w-full object-cover max-h-[500px] object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
@@ -264,13 +272,13 @@ function About() {
               Built for Traders Who Want <span className="gold-text">Real Skill</span>
             </h2>
             <p className="text-gray-400 leading-relaxed mb-6">
-              G2S Trades was created with one mission: teach traders the actual skill needed to pass evaluations, get funded by top prop firms, and secure consistent monthly payouts not just watch signals.
+              G2S Trades was created with one mission: teach traders the actual skill needed to pass evaluations, get funded by top prop firms, and secure consistent monthly payouts — not just watch signals.
             </p>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Gabe is a 6-year futures day trader actively funded across multiple prop firms including MyFundedFutures and Tradeify. He trades the NY session live every morning so members can watch the entire process real entries, real risk management, real results.
+              Gabe is a 6-year futures day trader actively funded across multiple prop firms including MyFundedFutures and Tradeify. He trades the NY session live every morning so members can watch the entire process — real entries, real risk management, real results.
             </p>
             <p className="text-gray-400 leading-relaxed mb-8">
-              The curriculum is built around ICT concepts, structured psychology training, and prop firm guidance everything most traders skip, and the reason most traders fail.
+              The curriculum is built around ICT concepts, structured psychology training, and prop firm guidance — everything most traders skip, and the reason most traders fail.
             </p>
             <div className="flex flex-wrap gap-3">
               {['ICT Concepts', 'NQ & ES Futures', 'Prop Firm Mastery', 'Psychology Training', 'Live Trading Daily'].map(tag => (
@@ -286,7 +294,7 @@ function About() {
               { icon: '✝️', text: 'Faith-first community with real values and transparency' },
               { icon: '📈', text: 'Live NY session Monday–Friday, every trading day' },
               { icon: '🎯', text: 'Focused on prop firm evaluations and consistent payouts' },
-              { icon: '🔍', text: 'Full transparency — wins and losses shared openly' },
+              { icon: '🔍', text: 'Full transparency — wins AND losses shared openly' },
               { icon: '🤝', text: 'Tight-knit community of serious, growth-focused traders' },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-4 card-dark rounded-xl p-4">
@@ -553,7 +561,7 @@ function Testimonials() {
             Even More Wins Inside the Discord
           </h3>
           <p className="text-gray-400 text-sm max-w-lg mx-auto mb-6">
-            These are just a sample. Hundreds more student results, testimonials, and success stories live inside the free Discord server open to everyone, no membership required.
+            These are just a sample. Hundreds more student results, testimonials, and success stories live inside the free Discord server — open to everyone, no membership required.
             <br /><span className="text-white font-semibold">Have questions? Jump in and ask.</span>
           </p>
           <a href="https://discord.gg/n8Z5qQPumc" target="_blank" rel="noopener noreferrer"
@@ -577,7 +585,8 @@ function Pricing({ onJoin }) {
       trial: '3-day free trial',
       url: 'https://www.launchpass.com/g2s-trades',
       highlight: false,
-      code: null,
+      code: 'WELCOME30',
+      codeLabel: '30% off first billing — code WELCOME30',
     },
     {
       name: 'Quarterly',
@@ -587,8 +596,8 @@ function Pricing({ onJoin }) {
       url: 'https://www.launchpass.com/g2s-trades',
       highlight: true,
       badge: 'Best Value',
-      code: null,
-      codeLabel: null,
+      code: 'WELCOME30',
+      codeLabel: '30% off first billing — code WELCOME30',
     },
   ]
 
@@ -783,7 +792,7 @@ function FinalCTA({ onJoin }) {
           className="gold-gradient text-black font-black text-xl px-14 py-5 rounded-full hover:opacity-90 transition-all hover:scale-105 gold-glow">
           Start Your Free Trial Today →
         </button>
-        <p className="mt-4 text-sm text-gray-600">3-day free trial · Cancel anytime before the trial ends</p>
+        <p className="mt-4 text-sm text-gray-600">3-day free trial · Cancel anytime · Use code <span className="text-[#C9A227] font-bold">WELCOME30</span> for 30% off your first billing cycle</p>
       </div>
     </section>
   )
@@ -836,7 +845,15 @@ function JoinModal({ open, onClose }) {
         <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-white">✕</button>
         <img src="/images/logo/logo.png" alt="G2S Trades" className="h-14 w-auto mb-5" />
         <h3 className="font-display text-2xl font-black text-white mb-2">Choose Your Plan</h3>
-        <p className="text-gray-500 text-sm mb-6">Start with a 3-day free trial. No charge until the trial ends.</p>
+        <p className="text-gray-500 text-sm mb-4">Start with a 3-day free trial. No charge until the trial ends.</p>
+
+        <div className="mb-5 flex items-center gap-2 border border-[#C9A227]/30 bg-[#C9A227]/5 rounded-xl px-4 py-3">
+          <span className="text-lg">🎉</span>
+          <div>
+            <p className="text-xs font-black text-[#C9A227]">NEW MEMBER DISCOUNT</p>
+            <p className="text-xs text-gray-400 mt-0.5">Use code <span className="font-black text-white bg-[#C9A227]/20 px-1.5 py-0.5 rounded">WELCOME30</span> at checkout for 30% off your first billing cycle</p>
+          </div>
+        </div>
 
         <div className="space-y-3">
           <a href="https://www.launchpass.com/g2s-trades" target="_blank" rel="noopener noreferrer"
